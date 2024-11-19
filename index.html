@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var arr = [[22, 33], 23, 23, 23, 32,[353, 55, 66]];
+            // flat an array
+            function flatarr(arr) {
+                var result = [];
+                for (var i = 0; i < arr.length; i++) {
+                    if (Array.isArray(arr[i])) {
+                        result = result.concat(flatarr(arr[i]));
+                    } else {
+                        result.push(arr[i]);
+                    }
+                }
+                return result;
+            }
+
+            console.log(flatarr(arr));
+        </script>
+
+
+
+<script>
+
+var arr2 =[22,44,55,33,22,44];
+
+// remove duplicate array
+function removeDuplicate(arr) {
+    var result = [];
+    for (var i = 0; i < arr.length; i++) {
+        if (result.indexOf(arr[i]) === -1) {
+            result.push(arr[i]);
+        }
+    }
+    return result;
+}
+
+console.log(removeDuplicate(arr2));
+</script>
+
+</script>
+    </body>
+</html>

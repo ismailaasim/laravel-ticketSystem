@@ -1,0 +1,284 @@
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   /* ********************************* this is for responsive about the card header ******************************************************************** */
+   @media (max-width: 1620px) {
+    .custom-col {
+      flex: 0 0 25%;
+      max-width: 25%; /* Equivalent to col-md-9 */
+    }
+    .custom-col1 {
+      flex: 0 0 75%;
+      max-width: 75%; /* Equivalent to col-md-9 */
+    }
+  }
+  @media (max-width: 1340px) {
+    .custom-col {
+      flex: 0 0 20%;
+      max-width: 20%; /* Equivalent to col-md-9 */
+    }
+    .custom-col1 {
+      flex: 0 0 80%;
+      max-width: 80%; /* Equivalent to col-md-9 */
+    }
+  }
+  
+  @media (max-width: 1260px) {
+    .custom-col {
+      flex: 0 0 20%;
+      max-width: 20%; /* Equivalent to col-md-9 */
+    }
+    .custom-col1 {
+      flex: 0 0 80%;
+      max-width: 80%; /* Equivalent to col-md-9 */
+    }
+    .no-hover {
+      padding: 5px 8px;
+      font-size: 12px !important;
+      margin: 0;
+  }
+  }
+  
+  
+  @media (min-width: 995px) and (max-width: 1600px) {
+    .counts {
+      flex: 0 0 auto;
+      width: 23.666667%;
+  }
+  }
+  
+  @media(max-width:960px){
+    .custom-col {
+      flex: 0 0 100%;
+      max-width: 100%; /* Equivalent to col-md-9 */
+    }
+    .custom-col1 {
+      flex: 0 0 100%;
+      max-width: 100%; /* Equivalent to col-md-9 */
+    }
+    .input-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 69%;
+        /* margin-right: auto; */
+        right: 0%;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .wrapping {
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .wrapping1 {
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .input-container {
+      width: 80%;
+      margin-right: 20px;
+    }
+  
+    .filter-btn {
+      width: 150px; /* Adjust as needed */
+      height: 45px; /* Adjust as needed */
+      box-sizing: border-box;
+      padding: 8px 12px; /* Adjust padding if needed */
+      font-size: 14px; /* Adjust font size if needed */
+    }
+  
+    .adding {
+      width: 45%;
+      padding: 14px !important;
+      /* margin: 10px; */
+    }
+  }
+  
+  @media(max-width:590px){
+    .wrapping {
+        justify-content: center;
+        align-items: center;
+    }
+    .shipFlex{
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .shipFlex .filter-container{
+        width: 100%;
+    }
+
+    .filter-dpt1 {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 99999;
+        width: 250px;
+        /* height: 280px; */
+    }
+    .filter-dpt {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 99999;
+        width: 300px;
+        /* height: 280px; */
+    }
+    .wrapping1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .input-container,
+    .filter-btn,
+    .adding {
+        width: 100%; /* Ensure full width on small screens */
+    }
+
+    /* Optional: Adjust margins and padding for better spacing */
+    .input-container {
+        margin-right: 0; /* Remove right margin on small screens */
+      
+    }
+    .wrapping1 .filter-container{
+        width: 100%;
+    }
+
+    .filter-btn {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 12px 15px; /* Adjust padding for smaller screens */
+        font-size: 13px; /* Adjust font size for smaller screens */
+    }
+
+    
+  }
+  
+ 
+  @media (max-width: 460px) {
+    .dropdown {
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 24px); /* Adjust width to account for margin */
+    }
+
+    .dropdown button {
+      width: 100% !important;
+      margin: 5px 0; /* Space between buttons */
+      box-sizing: border-box;
+    }
+  
+  
+    .filter-dpt {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 99999;
+        width: 250px;
+        /* height: 280px; */
+    }
+    /* Ensure the buttons do not exceed container width */
+    .btn {
+      box-sizing: border-box;
+    }
+  }
+  
+  /* ********************************* this is for responsive about the dashboard,shipment,user card *************************************** */
+  @media(max-width:768px){
+    .ms-3 {
+        margin-left: 0 !important; 
+   }
+  }
+  @media(max-width:370px){
+    .filter-dpt {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: -28px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 99999;
+        width: 250px;
+        /* height: 280px; */
+    }
+  }
+ @media(max-width:360px){
+    .triangle-layout {
+        position: relative;
+        height: 70px;
+      }
+      .filter-dpt1 {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: -25px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 99999;
+        width: 234px;
+        /* height: 280px; */
+    }
+  .triangle-layout .value-1 {
+    top: 0;
+    left: 0;
+    color: white; 
+    font-size: 15px;
+  }
+  .triangle-layout .value-2{
+    top: 0;
+    right: 0;
+    color: white; 
+    font-size: 15px;
+   
+  }
+  .custom-icon-color {
+    color: white; /* Change to your desired color */
+  }
+  .triangle-layout .value-3 {
+    bottom: 0;
+    /* left: 10%; */
+    font-size: 25px;
+    transform: translateX(-10%);
+    font-weight: bold;
+  }
+ 
+    .ms-3 {
+         margin-left: 0 !important; 
+    }
+ 
+}
+@media(max-width:334px){
+    .filter-dpt{
+        width: 228px;
+    }
+}
